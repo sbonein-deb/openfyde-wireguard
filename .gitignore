@@ -1,0 +1,11 @@
+# Build artifacts and host-specific data
+*.ko
+*.o
+*.mod
+*.mod.c
+*.symvers
+*.order
+host.config
+wg-modules.tar.gz
+*.log
+out/
