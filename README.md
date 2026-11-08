@@ -97,10 +97,6 @@ the matching kernel source before restoring the job.
 - **`Failed to create wireguard interface`** — the module is not loaded or its
   `vermagic` does not match. Check `dmesg`, `lsmod`, and
   `modinfo /usr/local/lib/wireguard/wireguard.ko`.
-- **Connected but no traffic** — the client `Address` must be the tunnel IP
-  assigned by the server (e.g. `10.0.0.2/32`). It must **not** equal the peer
-  `Endpoint` public IP, otherwise the kernel treats the endpoint as local and
-  the handshake never completes.
 - **Crostini loses connectivity when the VPN is on** — run
   `scripts/diagnose-host-vpn.sh` and `scripts/diagnose-container-vpn.sh` with
   the VPN connected, then see `docs/TROUBLESHOOTING.md`.
